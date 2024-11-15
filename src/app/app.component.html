@@ -13,12 +13,21 @@
     />
 
     <style>
+      /* Enable smooth scrolling for the whole page */
+      html {
+        scroll-behavior: smooth;
+      }
+
       body {
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
         background-color: #e6f7ff; /* Light Cyan */
         color: #333;
+        background-image: url("/images/background-1.webp"); /* Reference image from public folder */
+        background-size: cover; /* Cover the entire background */
+        background-position: center center; /* Center the image */
+        background-attachment: fixed; /* Make the background fixed while scrolling */
       }
 
       header {
@@ -26,13 +35,13 @@
         color: #ffffff;
         display: flex;
         align-items: center;
-        justify-content: center;
-        padding: 20px 0;
+        justify-content: space-between;
+        padding: 1rem 2rem;
       }
 
       header img {
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
         margin-right: 15px;
       }
@@ -45,7 +54,7 @@
       header nav a {
         color: white;
         text-decoration: none;
-        font-size: 1.4rem;
+        font-size: 20px;
       }
 
       header nav a:hover {
@@ -58,6 +67,10 @@
         align-items: center;
         padding: 40px;
         text-align: center;
+        position: relative;
+        color: white;
+        box-sizing: border-box;
+        min-height: calc(100vh - 82px);
       }
 
       .main-content img {
@@ -67,6 +80,23 @@
         margin-bottom: 20px;
       }
 
+      article {
+        border-radius: 1rem;
+        max-width: 60%;
+        background-color: rgba(0, 0, 0, 0.304);
+        padding: 2rem;
+        color: #333;
+        background-color: rgb(255 255 255 / 79%);
+      }
+
+      h2 {
+        font-size: 2.5rem;
+      }
+
+      p {
+        font-size: 20px;
+      }
+
       .cta-btn {
         background-color: #2d9cdb; /* Primary Blue */
         color: white;
@@ -74,7 +104,8 @@
         text-decoration: none;
         font-size: 1.2rem;
         border-radius: 5px;
-        margin-top: 20px;
+        display: inline-block;
+        box-sizing: border-box;
         transition: background-color 0.3s ease;
       }
 
@@ -85,10 +116,10 @@
       .info-section {
         background-color: #ffffff;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-        width: 100%;
-        max-width: 800px;
-        margin-top: 50px;
+        /* width: 100%; */
+        /* max-width: 800px; */
         padding: 40px;
+        box-sizing: border-box;
         border-radius: 8px;
         text-align: left;
       }
@@ -105,7 +136,6 @@
       }
 
       .social-links {
-        margin-top: 40px;
         text-align: center;
         display: flex;
         align-items: center;
@@ -146,7 +176,7 @@
         color: white;
         text-align: center;
         padding: 20px 0;
-        margin-top: 60px;
+        box-sizing: border-box;
       }
 
       section {
@@ -155,7 +185,7 @@
       }
 
       #about {
-        background-color: #ffffff;
+        background-color: transparent;
       }
 
       #socials {
@@ -163,8 +193,14 @@
       }
 
       #usage {
-        background-color: #ffffff;
+        /* background-color: #ffffff; */
         padding: 50px 0;
+        box-sizing: border-box;
+        min-height: calc(100vh - 103px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
       }
 
       #usage h2 {
@@ -196,24 +232,43 @@
     </header>
 
     <div class="main-content">
-      <img
-        src="https://plum-near-goat-819.mypinata.cloud/ipfs/QmZdE1FioAhCSLRMjxgC9WByWPJiCm4XDCrsUksXCvaEwE"
-        alt="EzBump Logo"
-      />
-      <h2>Get Your Tokens Trending and Visible</h2>
-      <p>
-        🚀 <strong>Make your meme coin stand out on pump.fun!</strong> 🚀<br />
-        With EzBump, get the most affordable, efficient, and hassle-free token
-        bumping service available right now.
-      </p>
-      <a href="https://t.me/ez_bump_bot" target="_blank" class="cta-btn"
-        >Start Bumping Now</a
-      >
+      <article>
+        <img
+          src="https://plum-near-goat-819.mypinata.cloud/ipfs/QmZdE1FioAhCSLRMjxgC9WByWPJiCm4XDCrsUksXCvaEwE"
+          alt="EzBump Logo"
+        />
+        <h2>Get Your Tokens Trending and Visible</h2>
+        <p>
+          🚀
+          <strong>Make your meme coin stand out on pump.fun!</strong> 🚀<br />
+          With EzBump, you can boost your token's visibility using the most
+          affordable, efficient, and hassle-free token bumping service available
+          today.
+        </p>
+        <a href="https://t.me/ez_bump_bot" target="_blank" class="cta-btn"
+          >Start Bumping Now</a
+        >
+      </article>
     </div>
 
     <!-- About Section -->
-    <section id="about">
-      <div class="info-section">
+    <section
+      id="about"
+      style="
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      "
+    >
+      <div style="display: flex; justify-content: end">
+        <article class="info-section" style="padding-right: 6rem">
+          <h2>Only for 0.0003 SOL</h2>
+          <p>You won't find anything cheaper!</p>
+        </article>
+      </div>
+
+      <article class="info-section">
         <h2>Why Choose EzBump?</h2>
         <p>
           💵 <strong>Cheapest and easiest bump bot available</strong>
@@ -224,23 +279,27 @@
           for your token's visibility
           <br />
         </p>
-      </div>
+      </article>
     </section>
 
     <!-- Usage Section -->
     <section id="usage">
-      <h2>How to Get Started with EzBump</h2>
-      <ol>
-        <li>1️⃣ Deposit some SOL into your ez-wallet which will be provided</li>
-        <li>2️⃣ Press the "Start Bumping" button</li>
-        <li>
-          3️⃣ Enter your meme coin's Contract Address (CA) and enjoy bumping! 🔥
-        </li>
-      </ol>
+      <article>
+        <h2>How to Get Started with EzBump</h2>
+        <ol>
+          <li>
+            1️⃣ Deposit some SOL into your ez-wallet which will be provided
+          </li>
+          <li>2️⃣ Press the "Start Bumping" button</li>
+          <li>
+            3️⃣ Enter your meme coin's Contract Address (CA) and enjoy bumping!
+            🔥
+          </li>
+        </ol>
+      </article>
     </section>
 
-    <!-- Socials Section -->
-    <section id="socials">
+    <section id="socials" style="box-sizing: border-box">
       <div class="social-links">
         <!-- Telegram Icon -->
         <a href="https://t.me/ez_bump_bot" target="_blank">
