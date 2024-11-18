@@ -1,6 +1,6 @@
 # Node version
 
-20.11.1
+20.11.1 || 18.19.1
 
 # PumpFunBotWebsite
 
