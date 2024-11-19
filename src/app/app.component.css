@@ -40,12 +40,9 @@ main {
 }
 
 #main {
-  /* border: solid 2px red; */
 }
 
 #why {
-  /* border: solid 2px green; */
-
   article {
     width: 30%;
     h3 {
@@ -60,7 +57,6 @@ main {
 }
 
 #usage {
-  /* border: solid 2px blue; */
   display: flex;
   flex-direction: column;
 
@@ -114,8 +110,6 @@ main {
 }
 
 #token-visibility {
-  /* border: solid 2px yellow; */
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -141,6 +135,53 @@ main {
       color: var(--light-blue);
       margin-bottom: 0;
     }
+  }
+}
+
+#epilogue {
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: stretch;
+  gap: 4rem;
+  padding: 2rem 2rem 3rem 2rem;
+
+  h2 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    margin: 2rem 0;
+  }
+
+  h3 {
+    margin-bottom: 0;
+  }
+
+  .socials {
+    display: flex;
+    gap: 2rem;
+    width: fit-content;
+
+    a {
+      border: solid 2px var(--white);
+      border-radius: 100%;
+      display: inline-block;
+      padding: 12px 12px 6px 14px;
+      svg {
+        width: 40px;
+        height: 40px;
+        fill: var(--white);
+      }
+    }
+  }
+
+  & > div,
+  aside {
+    flex: 1;
+  }
+
+  aside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
