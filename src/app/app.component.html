@@ -20,105 +20,12 @@
       rel="stylesheet"
     />
 
-    <style>
-      /* Define variables in the :root selector */
-      :root {
-        --white: #f9fcfb;
-        --light-gray: #f2f2f2;
-        --light-blue: #57ccf2;
-        --black: #152444;
-        --shadow-color: #333333;
-      }
-
-      /* Add box-sizing border-box; to all elements */
-      *,
-      *::before,
-      *::after {
-        box-sizing: border-box;
-      }
-
-      /* Enable smooth scrolling for the whole page */
-      html {
-        scroll-behavior: smooth;
-      }
-
-      body {
-        margin: 0;
-        padding: 0;
-        background-image: linear-gradient(to right, #1f3055, #2c9ddc);
-        color: var(--light-gray);
-        font-family: "Rubik", serif;
-        font-weight: 700;
-      }
-
-      html,
-      body {
-        height: 100%;
-      }
-
-      section {
-        min-height: 100vh;
-      }
-
-      #main {
-        /* border: solid 2px red; */
-      }
-
-      #about {
-        /* border: solid 2px green; */
-      }
-
-      h1,
-      h2,
-      h3,
-      div,
-      span,
-      p {
-        text-shadow: var(--shadow-color) 1px 0 10px;
-      }
-
-      p {
-        font-size: 1rem;
-        font-weight: 400;
-        line-height: 135%;
-      }
-
-      h1 {
-        font-size: 4rem;
-        font-weight: 700;
-      }
-
-      h2 {
-        font-size: 3rem;
-        font-weight: 500;
-      }
-
-      a {
-        /* Remove styles */
-        text-decoration: none;
-        color: var(--white);
-
-        /* Button styles */
-        &.btn {
-          display: inline-block;
-          padding: 1.5rem 2rem;
-          background-color: var(--white);
-          color: var(--black);
-          border-radius: 10rem;
-          font-weight: 700;
-          font-size: 1.5rem;
-          transition: background-color 0.3s;
-          width: fit-content;
-          box-shadow: -2px 2px 10px var(--shadow-color);
-          text-shadow: none;
-        }
-      }
-    </style>
+    <style></style>
   </head>
 
   <body>
     <!-- Main section -->
-    <section id="main" style="display: flex">
+    <main id="main" style="display: flex">
       <div
         style="
           display: flex;
@@ -136,10 +43,10 @@
             height="100"
           />
           <span style="font-size: 2rem; font-weight: 500">
-            ezpump.fun
+            <!-- ezpump.fun -->
             <!-- ezpump -->
             <!-- Ez Pump -->
-            <!-- EzPummp -->
+            EzPummp
           </span>
         </div>
         <div
@@ -174,9 +81,6 @@
         </div>
       </div>
       <aside style="display: flex; align-items: center; padding-right: 5%">
-        <!-- <video width="400" height="400" autoplay loop>
-          <source src="greetings-animation.mp4" type="video/mp4" />
-        </video> -->
         <img
           src="greeting-robot-cropped.gif"
           alt="EzPump - Ez Pump Bot"
@@ -184,16 +88,16 @@
           height="600"
         />
       </aside>
-    </section>
+    </main>
 
-    <!-- About section -->
+    <!-- "Why" section -->
     <section
-      id="about"
+      id="why"
       style="
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 6rem;
+        gap: 10rem;
       "
     >
       <div>
@@ -205,32 +109,103 @@
           height="450"
         />
       </div>
-      <article style="width: 30%">
-        <h3 style="margin-bottom: 0.5rem">Lowest Pricing in the Market:</h3>
-        <p style="padding-left: 1rem; margin-top: 0">
+      <article>
+        <h3>Lowest Pricing in the Market:</h3>
+        <p>
           EzPump provides the most affordable pump service, starting at just
           0.0003 SOL—making it accessible to everyone.
         </p>
-        <h3 style="margin-bottom: 0.5rem">Simple to Use:</h3>
-        <p style="padding-left: 1rem; margin-top: 0">
+        <h3>Simple to Use:</h3>
+        <p>
           With a user-friendly interface, you can boost your token in just a few
           steps—no technical experience required.
         </p>
-        <h3 style="margin-bottom: 0.5rem">Instant Exposure:</h3>
-        <p style="padding-left: 1rem; margin-top: 0">
+        <h3>Instant Exposure:</h3>
+        <p>
           Your token will begin receiving attention immediately, with results
           visible in real time.
         </p>
-        <h3 style="margin-bottom: 0.5rem">Secure and Reliable:</h3>
-        <p style="padding-left: 1rem; margin-top: 0">
+        <h3>Secure and Reliable:</h3>
+        <p>
           We ensure your transactions and data are safe with top-tier encryption
           and security protocols.
         </p>
-        <h3 style="margin-bottom: 0.5rem">Transparent and No Hidden Fees:</h3>
-        <p style="padding-left: 1rem; margin-top: 0">
-          What you see is what you get. No surprises, no extra charges.
-        </p>
+        <h3>Transparent and No Hidden Fees:</h3>
+        <p>What you see is what you get. No surprises, no extra charges.</p>
       </article>
+    </section>
+
+    <!-- Usage section -->
+    <section id="usage">
+      <div style="width: 100%; padding-left: 15%">
+        <h2 class="usage-title">How it works?</h2>
+      </div>
+      <div
+        style="
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          flex: 1;
+          padding-bottom: 5%;
+        "
+      >
+        <ol>
+          <li>
+            <article>
+              <h3>1</h3>
+              <p>Deposit SOL into your EzPump wallet</p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h3>2</h3>
+              <p>Press “Start Bumping” to initiate the process</p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h3>3</h3>
+              <p>Enter the Token you want to bump and watch as it grows!</p>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="token-visibility">
+      <div>
+        <div style="width: 100%">
+          <h2>Why Token Visibility Matters</h2>
+        </div>
+        <article>
+          <div>
+            <h3>Take Over the Front Page on Pump.Fun</h3>
+            <p>
+              Every small buy pushes your token to the top of the list, putting
+              it in the spotlight where it belongs. Our strategic buy-and-sell
+              method ensures your token remains visible and relevant.
+            </p>
+          </div>
+          <div>
+            <h3>Attract the Right Attention</h3>
+            <p>
+              A front-page spot catches the eyes of investors actively searching
+              for opportunities. Visibility leads to curiosity, and curiosity
+              drives action.
+            </p>
+          </div>
+          <div>
+            <h3>Create FOMO and Build Momentum</h3>
+            <p>
+              Being at the top isn't just about visibility—it's about urgency.
+              When buyers see your token leading the charge, they'll want to
+              join in, driving more trades and boosting your token's presence.
+            </p>
+          </div>
+        </article>
+      </div>
     </section>
 
     <!-- Reference Code -->
