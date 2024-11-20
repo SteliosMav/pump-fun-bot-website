@@ -237,6 +237,14 @@ a {
 }
 
 /* Add media query */
+@media (max-width: 1280px) {
+  #epilogue {
+    h2 {
+      font-size: 4rem;
+    }
+  }
+}
+
 @media (min-width: 1640px) {
   h1 {
     font-size: 6rem;
@@ -267,6 +275,13 @@ a {
       p {
         font-size: 1.5rem;
       }
+    }
+  }
+
+  #epilogue {
+    padding-left: 5%;
+    article p {
+      font-size: 1.5rem;
     }
   }
 }
