@@ -148,7 +148,7 @@ main {
   h2 {
     font-size: 5rem;
     margin-bottom: 2rem;
-    margin: 2rem 0;
+    margin: 2rem 0 0 0;
   }
 
   h3 {
@@ -241,7 +241,6 @@ a {
   #epilogue {
     h2 {
       font-size: 4rem;
-      margin-bottom: 0;
     }
   }
 }
@@ -281,6 +280,9 @@ a {
 
   #epilogue {
     padding-left: 5%;
+    h2 {
+      margin-bottom: 2rem;
+    }
     article p {
       font-size: 1.5rem;
     }
