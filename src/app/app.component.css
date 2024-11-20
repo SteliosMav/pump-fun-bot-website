@@ -237,10 +237,11 @@ a {
 }
 
 /* Add media query */
-@media (max-width: 1280px) {
+@media (max-width: 1380px) {
   #epilogue {
     h2 {
       font-size: 4rem;
+      margin-bottom: 0;
     }
   }
 }
