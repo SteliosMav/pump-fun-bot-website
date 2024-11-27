@@ -59,9 +59,17 @@ main {
 #usage {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
 
   .usage-title {
     font-size: 5rem;
+  }
+
+  video {
+    border-radius: 1rem;
+    width: 480px;
+    height: 251px;
+    box-shadow: 0 0 30px 4px rgb(255, 255, 255); /* White glow */
   }
 
   /* Remove styles from ol */
@@ -173,7 +181,7 @@ main {
     }
   }
 
-  & > div,
+  & shadow-color > div,
   aside {
     flex: 1;
   }
@@ -245,6 +253,16 @@ a {
   }
 }
 
+/* Add media query */
+@media (max-width: 1640px) {
+  #usage article {
+    width: 250px !important;
+    height: 350px !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+}
+
 @media (min-width: 1381px) {
   #token-visibility article p {
     font-size: 1.5rem;
@@ -269,8 +287,14 @@ a {
     font-size: 2rem;
   }
 
-  #usage .usage-title {
-    font-size: 6rem;
+  #usage {
+    .usage-title {
+      font-size: 6rem;
+    }
+    video {
+      height: 336px;
+      width: 640px;
+    }
   }
 
   #token-visibility {
