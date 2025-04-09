@@ -1,31 +1,33 @@
-# Node version
+# 🧾 Telegram Volume Bot for Pump.fun
 
-20.11.1 || 18.19.1
+This project is a Telegram bot that interacts with the **Pump.fun** ecosystem — specifically designed to **boost token volume and visibility** through automated transactions.
 
-# PumpFunBotWebsite
+🌐 **Live Links**  
+- Website: [ezpump.fun](https://www.ezpump.fun/)  
+- Telegram Support: [@ezpumpsupport](https://t.me/ezpumpsupport)  
+- Twitter: [@EzPumpFun](https://x.com/EzPumpFun)  
+- Contact: [info@ezpump.fun](mailto:info@ezpump.fun)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.10.
+---
 
-## Development server
+## 🛠 What’s a Volume Bot?
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+A **volume bot** is used to artificially increase trading activity for newly launched tokens on [Pump.fun](https://pump.fun), a Solana-based meme coin launchpad. By creating simulated buy/sell activity, these bots help:
 
-## Code scaffolding
+- Boost token visibility on the Pump.fun trending and leaderboard sections.
+- Create perceived momentum to attract real users or traders.
+- Automate rapid transactions for marketing or liquidity stimulation.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+This bot allows users to trigger these actions directly from **Telegram**, providing a simple and fast interface for volume boosting.
 
-## Build
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 💰 Service Fee
 
-## Running unit tests
+When executing transactions, the bot can take a small **service fee** to cover:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Solana transaction costs.
+- Bot infrastructure and uptime.
+- A small margin for the operator.
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+> ⚠️ The service fee is deducted automatically from each executed transaction and is typically a small percentage of the total amount.
